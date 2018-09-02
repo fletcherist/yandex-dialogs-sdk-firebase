@@ -1,13 +1,12 @@
-import FileSync from 'lowdb/adapters/FileSync';
 import { ISessionStorage, ISession } from 'yandex-dialogs-sdk';
-import low, { AdapterSync, LowdbSync } from 'lowdb';
-import { LowDBSession } from './lowdbSession';
+import { FirebaseSession } from './firebaseSession';
 
-export class LowDBSessionStorage implements ISessionStorage {
-  private db: LowdbSync<AdapterSync>;
-  constructor(filePath: string) {
-    const adapter = new FileSync(filePath);
-    this.db = low(adapter);
+import * as admin from 'firebase-admin';
+
+export class FirebaseSessionStorage implements ISessionStorage {
+  private db: object;
+  constructor(dbRef: object) {
+    this.db = dbRef;
   }
   public async getOrCreate(id: string): Promise<ISession> {
     const sessions = this.db.get('sessions');

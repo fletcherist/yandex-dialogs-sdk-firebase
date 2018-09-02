@@ -4,7 +4,7 @@ import {
   ISessionStorage,
 } from 'yandex-dialogs-sdk';
 
-import { LowDBSessionStorage } from './src/lowdbSessionStorage';
-import { LowDBSession } from './src/lowdbSession';
+import { FirebaseSessionStorage } from './src/firebaseSessionStorage';
+import { FirebaseSession } from './src/firebaseSession';
 import { middleware } from './src/middleware';
-export { LowDBSessionStorage, LowDBSession, middleware };
+export { FirebaseSessionStorage, FirebaseSession, middleware };

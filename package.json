@@ -1,6 +1,6 @@
 {
-  "name": "yandex-dialogs-sdk-lowdb",
-  "version": "1.0.5",
+  "name": "yandex-dialogs-firebase",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,17 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fletcherist/yandex-dialogs-sdk.git"
+    "url": "git+https://github.com/fletcherist/yandex-dialogs-sdk-firebase.git"
   },
   "bugs": {
-    "url": "https://github.com/fletcherist/yandex-dialogs-sdk/issues"
+    "url": "https://github.com/fletcherist/yandex-dialogs-sdk-firebase/issues"
   },
-  "homepage": "https://github.com/fletcherist/yandex-dialogs-sdk#readme",
+  "homepage": "https://github.com/fletcherist/yandex-dialogs-sdk-firebase#readme",
   "author": "Phil Romanov @fletcherist",
   "license": "MIT",
   "dependencies": {
-    "@types/lowdb": "^1.0.5",
-    "lowdb": "^1.0.0",
     "yandex-dialogs-sdk": "^2.0.2"
   },
   "files": [

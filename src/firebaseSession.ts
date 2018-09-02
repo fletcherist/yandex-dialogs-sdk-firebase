@@ -6,7 +6,7 @@ interface ILowdbObject {
   unset(key: string): any;
   set(key: string, value: any): any;
 }
-export class LowDBSession implements ISession {
+export class FirebaseSession implements ISession {
   public readonly id: string;
   private readonly _sessionAdapter: ILowdbObject;
 
